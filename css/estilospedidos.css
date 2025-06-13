@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f06, #800080); /* Fondo rosa y morado */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f06; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #f06;
+}
+
+
+/* Contenedor principal que envuelve el formulario y el cuadro de orden */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 80px; /* Espacio para la barra de navegación */
+    gap: 40px; /* Espacio entre las columnas */
+    flex-wrap: wrap; /* Para pantallas pequeñas */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Título del formulario */
+h1 {
+    text-align: center;
+    color: #800080;
+    margin-bottom: 30px;
+}
+
+/* Estilo de las etiquetas de los campos */
+label {
+    display: block;
+    margin-bottom: 12px;
+    color: #800080;
+    font-size: 16px;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0 18px 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilo de los botones */
+input[type="submit"] {
+    background-color: #fff;
+    color: #800080;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #f06;
+    color: white;
+}
+
+/* Estilo de la caja de "Su orden es:" */
+.orden-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #800080;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.orden-box h2 {
+    color: #f06;
+    margin-bottom: 15px;
+}

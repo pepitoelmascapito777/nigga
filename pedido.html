@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" type="text/css" href="css/estilospedidos.css">
+</head>
+<body>
+    <nav> 
+        <a href="index.html" target="">Principal</a>
+        <a href="menu.html" target="">Menú</a>
+        <a href="index.html" target="">Regresar</a>
+    </nav>
+
+    <h1>Formulario de Contacto</h1>
+
+
+    <img src="D:/tacos/img/asd.gif" alt="Descripción de la imagen">
+
+
+    <div class="form-container">
+        <form action="/submit_form" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required><br><br>
+
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" rows="4" cols="50" required></textarea><br><br>
+
+            <!-- Campos ocultos para almacenar los productos seleccionados -->
+            <input type="hidden" id="producto1" name="productos[]" value="">
+            <input type="hidden" id="producto2" name="productos[]" value="">
+            <input type="hidden" id="producto3" name="productos[]" value="">
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <!-- Cuadro de "Su orden es" -->
+        <div class="orden-box">
+            <h2>Su orden es:</h2>
+            <ul id="order-list">
+                <li id="producto1-list"></li>
+                <li id="producto2-list"></li>
+                <li id="producto3-list"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
